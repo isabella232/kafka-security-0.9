@@ -91,16 +91,13 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
     
     
 ## List important functions with example commands
-sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh  --authorizer-properties zookeeper.connect=localhost:2181   --list
-sh kafka_2.11-0.9.0.1/bin/kafka-topics.sh --list --zookeeper localhost:2181
-
-## Running project
-
-## Configuration (config commands)
-
-## List important functions with example commands
+   * sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh  --authorizer-properties zookeeper.connect=localhost:2181   --list
+   * sh kafka_2.11-0.9.0.1/bin/kafka-topics.sh --list --zookeeper localhost:2181
 
 ## Download
 
 ## Contributions
+
+@supermonk
+@mahipal_jupalli
  
