@@ -45,10 +45,11 @@
 * start kafka on server
 
 ```shell
-sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation All --allow-principal User:* --allow-host 192.168.70.101 --add --cluster
+sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation All --allow-principal User:*--allow-host 192.168.70.101 --add --cluster
     This will allow local server machine all ACL
 nohup sh kafka_2.11-0.9.0.1/bin/kafka-server-start.sh kafka_2.11-0.9.0.1/config/server.properties & (Run in background)
 ```
+
 * Create Topic
 ```shell
 sh kafka_2.11-0.9.0.1/bin/kafka-topics.sh --create --zookeeper 192.168.70.101:2181 --replication-factor 1 --partitions 1 --topic test
@@ -58,34 +59,36 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
 * Enter data, Two Options
     * manual Producer
         *
-        ```shell
+```shell
         sh kafka_2.11-0.9.0.1/bin/kafka-console-producer.sh --broker-list 192.168.70.101:9093 --topic test --producer.config securityDemo/producer.properties
-        ```
+```
     * Java Producer, Go outside the Vagrant box
-        * ```Java
+        * 
+```Java
            mvn clean package
-         ```
-        * ```shell
+```
+        *
+```shell
          cp src/main/resources/Producer.Properties data/
          cp target/kafka-security-demo-1.0.0-jar-with-dependencies.jar data/
-         ```
+```
         * Login into Server, Vagrant ssh c7001 and run below
-         ```Java
+```Java
          java -cp /vagrant/data/kafka-security-demo-1.0.0-jar-with-dependencies.jar com.symantec.cpe.KafkaProducer /vagrant/data/Producer.Properties
-         ```
+```
     * Allow c7002 to read data
-        ```shell
+```shell
         sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation Read --allow-principal User:* --allow-host 192.168.70.102 --add --topic test --group group102
-        ```
+```
 *Consumer
     * On the client  c7002
     * Add Consumer group
         * vim securityDemo/producer.properties
         * group.id=group102
     * Run the new consumer
-    ```shell
+```shell
      sh kafka_2.11-0.9.0.1/bin/kafka-console-consumer.sh --bootstrap-server c7001.symantec.dev.com:9093  --topic test --from-beginning --new-consumer --consumer.conf securityDemo/producer.properties
-    ```
+```
     
     
 ## List important functions with example commands
