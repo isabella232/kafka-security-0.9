@@ -18,6 +18,11 @@
 - Main Commands. Vagrant suspend, Vagrant resume --no-provision , Vagrant destroy
 - To clean up all, just run vagrant destroy -f (everything will get cleaned)
 
+## Image
+
+<p align="center">
+  <img src="src/main/resources/POC\ Security.jpg" align="center">
+</p>
 ## Installation  and Running (install commands)
 ### Step1
 * git clone http://ddd.cicd.ash2.symcpe.net/r/kaka-security-demo
@@ -43,7 +48,6 @@
 * start Zookeeper on server 
     * sh zookeeper-3.4.8/bin/zkServer.sh start
 * start kafka on server
-
 ```shell
 sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation All --allow-principal User:*--allow-host 192.168.70.101 --add --cluster
     This will allow local server machine all ACL
