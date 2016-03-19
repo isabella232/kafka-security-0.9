@@ -21,7 +21,7 @@
 ## Image
 
 <p align="center">
-  <img src="src/main/resources/POC\ Security.jpg" align="center">
+  <img src="https://github.com/Symantec/kafka-security-0.9/blob/master/src/main/resources/POC%20Security.jpg" align="center">
 </p>
 ## Installation  and Running (install commands)
 ### Step1
