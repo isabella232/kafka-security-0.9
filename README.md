@@ -102,3 +102,15 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
 
 <a href="https://github.com/supermonk">Narendra Bidari</a> </br>
 <a href="https://github.com/mahipalj27">Mahipal</a>
+
+## References, Additional Information
+
+* https://msdn.microsoft.com/en-us/library/windows/desktop/aa382479(v=vs.85).aspx
+* http://stackoverflow.com/questions/35653128/kafka-ssl-security-setup-causing-issue
+* http://kafka.apache.org/documentation.html#security_ssl
+* https://www.sslshopper.com/article-most-common-java-keytool-keystore-commands.html
+* https://chrisjean.com/change-timezone-in-centos/
+* http://docs.confluent.io/2.0.0/kafka/ssl.html
+* https://developer.ibm.com/messaging/2016/03/03/message-hub-kafka-java-api/
+* http://kafka.apache.org/documentation.html#security_authz
+* https://cwiki.apache.org/confluence/display/KAFKA/Security
