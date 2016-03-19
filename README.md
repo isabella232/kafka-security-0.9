@@ -25,8 +25,8 @@
 </p>
 ## Installation  and Running (install commands)
 ### Step1
-* git clone http://ddd.cicd.ash2.symcpe.net/r/kaka-security-demo
-* cd kaka-security-demo
+* git clone https://github.com/Symantec/kafka-security-0.9.git
+* cd kafka-security-demo
 * Run Start.sh     and go for coffee or just read along documentation ( 10 - 15 min)
     * (internally runs  sh /vagrant/data/step1-all.sh       => update software, install java, kafka, zoo)
     * (internally runs  sh /vagrant/data/step2server.sh     => Become CA root, generate public and private key)
@@ -100,5 +100,5 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
 
 ## Contributions
 
-<a href="https://github.com/supermonk">Narendra Bidari/</a> </br>
-<a href="https://github.com/mahipalj27">Mahipal/</a>
+<a href="https://github.com/supermonk">Narendra Bidari</a> </br>
+<a href="https://github.com/mahipalj27">Mahipal</a>
