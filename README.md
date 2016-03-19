@@ -100,5 +100,5 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
 
 ## Contributions
 
-<a href="https://github.com/supermonk">Narendra Bidari/</a>
+<a href="https://github.com/supermonk">Narendra Bidari/</a> </br>
 <a href="https://github.com/mahipalj27">Mahipal/</a>
