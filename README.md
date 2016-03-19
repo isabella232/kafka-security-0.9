@@ -98,10 +98,7 @@ sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connec
    * sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh  --authorizer-properties zookeeper.connect=localhost:2181   --list
    * sh kafka_2.11-0.9.0.1/bin/kafka-topics.sh --list --zookeeper localhost:2181
 
-## Download
-
 ## Contributions
 
-@supermonk
-@mahipal_jupalli
- 
+<a href="https://github.com/supermonk">Narendra Bidari/</a>
+<a href="https://github.com/mahipalj27">Mahipal/</a>
