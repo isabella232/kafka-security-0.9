@@ -49,7 +49,7 @@
     * sh zookeeper-3.4.8/bin/zkServer.sh start
 * start kafka on server
 ```shell
-sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation All --allow-principal User:*--allow-host 192.168.70.101 --add --cluster
+sh kafka_2.11-0.9.0.1/bin/kafka-acls.sh --authorizer-properties zookeeper.connect=localhost:2181 --operation All --allow-principal User:*   --allow-host 192.168.70.101 --add --cluster
     This will allow local server machine all ACL
 nohup sh kafka_2.11-0.9.0.1/bin/kafka-server-start.sh kafka_2.11-0.9.0.1/config/server.properties & (Run in background)
 ```
