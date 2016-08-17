@@ -26,7 +26,7 @@
 ## Installation  and Running (install commands)
 ### Step1
 * git clone https://github.com/Symantec/kafka-security-0.9.git
-* cd kafka-security-demo
+* cd kafka-security-0.9
 * Run Start.sh     and go for coffee or just read along documentation ( 10 - 15 min)
     * (internally runs  sh /vagrant/data/step1-all.sh       => update software, install java, kafka, zoo)
     * (internally runs  sh /vagrant/data/step2server.sh     => Become CA root, generate public and private key)
